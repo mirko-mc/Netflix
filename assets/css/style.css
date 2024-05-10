@@ -1,0 +1,55 @@
+:root {
+  /* link */
+  --bs-emphasis-color-rgb: #fff;
+  --bs-body-color: #fff;
+  /* body */
+  --bs-body-bg: #141414;
+  /* button */
+}
+/* nav */
+.link-body-emphasis:focus,
+.link-body-emphasis:hover {
+  font-weight: bold;
+}
+/* genres */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #000000;
+  --bs-btn-border-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #000000;
+  --bs-btn-active-border-color: #fff;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #000000;
+  --bs-btn-disabled-border-color: #000000;
+}
+.btn {
+  --bs-btn-font-weight: bold;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-radius: 0;
+}
+/* .dropdown-toggle::after {
+  margin-left: 2em;
+} */
+
+.icons {
+  display: flex;
+}
+.icons a {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid gray;
+  color: gray;
+}
+.icons a:hover,
+.icons a:focus {
+  border: 1px solid white;
+  color: white;
+}
+
+/* div{border: 1px solid white;} */
