@@ -1,207 +1,1216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
 
-    
-<nav class="navbar navbar-expand-sm navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-expand-xxl" aria-label="Navbar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body class="p-5 ">
+
+
+  <nav class="navbar navbar-expand-md "
+    aria-label="Navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand " href="#">
         <img src="./assets/imgs/Netflix_Logo_RGB.png" alt="Netflix Logo" height="50">
       </a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColl" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#navbarColl"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="navbar-collapse collapse" id="navbarColl">
+      <div class="navbar-collapse collapse " id="navbarColl">
         <ul class="navbar-nav me-auto mb-2 mb-sm-0">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">Home</a>
+            <a class="nav-link " aria-disabled="true" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">TV Shows</a>
+            <a class="nav-link active" aria-current="page" href="#">TV Shows</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-disabled="true">Movies</a>
+            <a class="nav-link" aria-disabled="true" href="#">Movies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-disabled="true">Recently Added</a>
+            <a class="nav-link" aria-disabled="true" href="#">Recently Added</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-disabled="true">My List</a>
+            <a class="nav-link" aria-disabled="true" href="#">My List</a>
           </li>
         </ul>
-        <!-- ICONA CERCA -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-search mb-3 mb-lg-0 me-lg-3"
-            viewBox="0 0 16 16"
-          >
+        <div class="d-flex align-items-center justify-content-center mx-2 ">
+          <!-- ICONA CERCA -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-search me-md-1 me-lg-3 " viewBox="0 0 16 16">
             <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-            />
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
           </svg>
-          <!-- <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input
-              type="search"
-              class="form-control"
-              placeholder="Search..."
-              aria-label="Search"
-            />
-          </form> -->
-          <span class="mb-3 mb-lg-0 me-lg-3">KIDS</span>
+          <span class="me-md-1 me-lg-3 ">KIDS</span>
           <!-- ICONA BELL -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-bell-fill mb-3 mb-lg-0 me-lg-3"
-            viewBox="0 0 16 16"
-          >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-bell-fill me-md-1 me-lg-3 " viewBox="0 0 16 16">
             <path
-              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
-            />
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
           </svg>
           <div class="dropdown text-end">
-            <a
-              href="#"
-              class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img
-                src="https://github.com/mdo.png"
-                alt="mdo"
-                width="32"
-                height="32"
-                class="square"
-              />
+            <a href="#" class=" link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="https://images.ctfassets.net/y2ske730sjqp/4aEQ1zAUZF5pLSDtfviWjb/ba04f8d5bd01428f6e3803cc6effaf30/Netflix_N.png?w=300" alt="Netflix" width="32" height="32" class="square" />
             </a>
             <ul class="dropdown-menu text-small">
               <li><a class="dropdown-item" href="#">New project...</a></li>
               <li><a class="dropdown-item" href="#">Settings</a></li>
               <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <hr class="dropdown-divider bg-white " />
+              </li>
               <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
           </div>
+        </div>
       </div>
     </div>
   </nav>
 
-
-
-
-
-
-
-    <header>
-        <section class="container-fluid" style="background-color: grey;">
-        <div class="row">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="col-6">
-            <h2>NAV SINISTRO</h2>
+  <header>
+    <section class="container-fluid" >
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center ">
+          <h1>TV Shows</h1>
+          <div class="dropdown px-3">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Genres
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Thriller</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Comedy</a>
+              </li>
+            </ul>
           </div>
-          <div class="col-6 d-flex  justify-content-end ">
-            <h2>NAV DESTRO</h2>
-          </div>
-
-
-
-
-
-
-
-        </section>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center ">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-grid-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z" />
+            </svg>
+          </a>
+        </div>
       </div>
-    </header>
-    <main>
+    </section>
+  </header>
+  <main>
 
-      <section class="container-fluid" style="background-color: brown;">
-        <div class="row">
-            <div class="col-6 ">
-                <h2>TITLE</h2>
+    <section class="container-fluid">
+      <h2>Trending Now</h2>
+      <div class="container-fluid ">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="carouselTrendingNow" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/1.png" alt="Unorthodox" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/2.png" alt="After Life" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/3.png" alt="Vis a Vas - Il prezzo del riscatto" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/4.png" alt="The Place" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/5.png" alt="Summer Time" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/6.png" alt="I delitti di Valhalla" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/7.png" alt="L'altra Grace" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/8.png" alt="Virgin River" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/9.png" alt="The English Game" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/10.png" alt="Il metodo Kominsky" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/11.png" alt="Patto d'amore" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/12.png" alt="La casa de Las Flores" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/13.png" alt="Collateral Beauty" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/14.png" alt="Self Made - La vita di Madame C.J. Walker"
+                        class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/15.png" alt="Freud" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/16.png" alt="Grace and Frankie" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/17.png" alt="Lasciati andare" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/18.png" alt="Dogman" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-6 d-flex justify-content-end ">
-                <h2>TITLE</h2>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#carouselTrendingNow" role="button"
+              data-bs-slide="prev">
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#carouselTrendingNow" role="button"
+              data-bs-slide="next">
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <h2>Watch it again</h2>
+      <div class="container-fluid ">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="carouselWatchItAgain" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/1.png" alt="Unorthodox" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/2.png" alt="After Life" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/3.png" alt="Vis a Vas - Il prezzo del riscatto" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/4.png" alt="The Place" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/5.png" alt="Summer Time" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/6.png" alt="I delitti di Valhalla" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/7.png" alt="L'altra Grace" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/8.png" alt="Virgin River" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/9.png" alt="The English Game" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/10.png" alt="Il metodo Kominsky" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/11.png" alt="Patto d'amore" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/12.png" alt="La casa de Las Flores" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/13.png" alt="Collateral Beauty" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/14.png" alt="Self Made - La vita di Madame C.J. Walker"
+                        class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/15.png" alt="Freud" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/16.png" alt="Grace and Frankie" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/17.png" alt="Lasciati andare" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/18.png" alt="Dogman" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#carouselWatchItAgain" role="button"
+              data-bs-slide="prev">
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#carouselWatchItAgain" role="button"
+              data-bs-slide="next">
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <h2>New Releases</h2>
+      <div class="container-fluid ">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="carouselNewReleases" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/1.png" alt="Unorthodox" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/2.png" alt="After Life" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/3.png" alt="Vis a Vas - Il prezzo del riscatto" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/4.png" alt="The Place" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/5.png" alt="Summer Time" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/6.png" alt="I delitti di Valhalla" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/7.png" alt="L'altra Grace" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/8.png" alt="Virgin River" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/9.png" alt="The English Game" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/10.png" alt="Il metodo Kominsky" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/11.png" alt="Patto d'amore" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/12.png" alt="La casa de Las Flores" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/13.png" alt="Collateral Beauty" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/14.png" alt="Self Made - La vita di Madame C.J. Walker"
+                        class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/15.png" alt="Freud" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/16.png" alt="Grace and Frankie" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/17.png" alt="Lasciati andare" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/18.png" alt="Dogman" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#carouselNewReleases" role="button"
+              data-bs-slide="prev">
 
-      <section class="container-fluid" style="background-color: blue;">
-        <h2>TRENDING NOW</h2>
-        <div class="row">
-                <div class="col-2 ">
-                    <img src="./assets/imgs/movies/1.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="./assets/imgs/movies/1.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="./assets/imgs/movies/1.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="./assets/imgs/movies/1.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="./assets/imgs/movies/1.png" alt="">
-                </div>
-                <div class="col-2">
-                    <img src="./assets/imgs/movies/1.png" alt="">
-                </div>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#carouselNewReleases" role="button"
+              data-bs-slide="next">
+
+            </a>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <h2>New Releases</h2>
+      <div class="container-fluid ">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="carouselNewReleases" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/1.png" alt="Unorthodox" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/2.png" alt="After Life" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/3.png" alt="Vis a Vas - Il prezzo del riscatto" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/4.png" alt="The Place" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/5.png" alt="Summer Time" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/6.png" alt="I delitti di Valhalla" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/7.png" alt="L'altra Grace" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/8.png" alt="Virgin River" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/9.png" alt="The English Game" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/10.png" alt="Il metodo Kominsky" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/11.png" alt="Patto d'amore" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/12.png" alt="La casa de Las Flores" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/13.png" alt="Collateral Beauty" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/14.png" alt="Self Made - La vita di Madame C.J. Walker"
+                        class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/15.png" alt="Freud" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/16.png" alt="Grace and Frankie" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/17.png" alt="Lasciati andare" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/18.png" alt="Dogman" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#carouselNewReleases" role="button"
+              data-bs-slide="prev">
 
-      <section class="container-fluid"
-        style="background-color: blueviolet;">
-        <h2>WATCH IT AGAIN</h2>
-      </section>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#carouselNewReleases" role="button"
+              data-bs-slide="next">
 
-      <section class="container-fluid" style="background-color: tomato;">
-        <h2>NEW RELEASES</h2>
-      </section>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <h2>New Releases</h2>
+      <div class="container-fluid ">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="carouselNewReleases" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/1.png" alt="Unorthodox" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/2.png" alt="After Life" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/3.png" alt="Vis a Vas - Il prezzo del riscatto" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/4.png" alt="The Place" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/5.png" alt="Summer Time" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/6.png" alt="I delitti di Valhalla" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/7.png" alt="L'altra Grace" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/8.png" alt="Virgin River" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/9.png" alt="The English Game" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/10.png" alt="Il metodo Kominsky" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/11.png" alt="Patto d'amore" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/12.png" alt="La casa de Las Flores" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/13.png" alt="Collateral Beauty" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/14.png" alt="Self Made - La vita di Madame C.J. Walker"
+                        class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/15.png" alt="Freud" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/16.png" alt="Grace and Frankie" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/17.png" alt="Lasciati andare" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/18.png" alt="Dogman" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#carouselNewReleases" role="button"
+              data-bs-slide="prev">
 
-    </main>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#carouselNewReleases" role="button"
+              data-bs-slide="next">
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <h2>New Releases</h2>
+      <div class="container-fluid ">
+        <div class="row mx-auto my-auto justify-content-center">
+          <div id="carouselNewReleases" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/1.png" alt="Unorthodox" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/2.png" alt="After Life" class="img-fluid ">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/3.png" alt="Vis a Vas - Il prezzo del riscatto" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/4.png" alt="The Place" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/5.png" alt="Summer Time" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/6.png" alt="I delitti di Valhalla" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/7.png" alt="L'altra Grace" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/8.png" alt="Virgin River" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/9.png" alt="The English Game" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/10.png" alt="Il metodo Kominsky" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/11.png" alt="Patto d'amore" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/12.png" alt="La casa de Las Flores" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/13.png" alt="Collateral Beauty" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/14.png" alt="Self Made - La vita di Madame C.J. Walker"
+                        class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/15.png" alt="Freud" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/16.png" alt="Grace and Frankie" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/17.png" alt="Lasciati andare" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-2 ">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/imgs/movies/18.png" alt="Dogman" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev bg-transparent w-aut" href="#carouselNewReleases" role="button"
+              data-bs-slide="prev">
+
+            </a>
+            <a class="carousel-control-next bg-transparent w-aut" href="#carouselNewReleases" role="button"
+              data-bs-slide="next">
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
