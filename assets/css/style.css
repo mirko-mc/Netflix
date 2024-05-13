@@ -1,3 +1,6 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 :root {
   --bs-emphasis-color-rgb: #fff;
   --bs-body-color: #fff;
